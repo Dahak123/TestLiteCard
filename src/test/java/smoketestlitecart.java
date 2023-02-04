@@ -64,8 +64,6 @@ public class smoketestlitecart {
         Lite.findElement(By.xpath("//div[@class='form-group col-md-6']//div[@class='input-group']//input[@name='confirmed_password']")).sendKeys("qwerty12345");
         Lite.findElement(By.xpath("//ul[@class='opt-ins list-unstyled']//label[@class='form-check']//input[@name='privacy_policy']")).click();
         Lite.findElement(By.xpath("//button[@name='create_account']")).click();
-
-
     }
 
     @Test
