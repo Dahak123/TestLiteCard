@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 @DisplayName("Smoke Tests")
-public class smoketestlitecart {
+public class smoketestlitecart extends Data{
 
     @Test
     public void switchlanguageTest() {
@@ -46,25 +46,7 @@ public class smoketestlitecart {
     }
 
 
-    @Test
-    public void singlInTest() {
-        WebDriver Lite = new ChromeDriver();
-        Lite.get("https://www.litecart.net/");
-        Lite.findElement(By.xpath("//*[@id=\"navbar\"]/ul[2]/li[2]/a/span")).click();
-        Lite.findElement(By.linkText("Create User Account")).click();
-        Lite.findElement(By.xpath("//div[@class='form-group col-md-6']//input[@name='username']")).sendKeys("qwerty");
-        Lite.findElement(By.xpath("//div[@class='form-group col-md-6']//select[@name='role']")).click();
-        Lite.findElement(By.xpath("//*[@id=\"content-wrapper\"]/main/div/div/form/div[1]/div[2]/select/option[4]")).click();
-        Lite.findElement(By.xpath("//div[@class='form-group']//div[@class='input-group']//input[@name='email']")).sendKeys("qwerty@mail.ru");
-        Lite.findElement(By.xpath("//div[@class='form-group col-md-6']//select[@name='zone_code']")).click();
-        Lite.findElement(By.xpath("//*[@id=\"content-wrapper\"]/main/div/div/form/div[4]/div[2]/select/option[5]")).click();
-        Lite.findElement(By.xpath("//div[@class='form-group']//select[@name='timezone']")).click();
-        Lite.findElement(By.xpath("//*[@id=\"content-wrapper\"]/main/div/div/form/div[5]/select/option[89]")).click();
-        Lite.findElement(By.xpath("//div[@class='form-group col-md-6']//div[@class='input-group']//input[@name='password']")).sendKeys("qwerty12345");
-        Lite.findElement(By.xpath("//div[@class='form-group col-md-6']//div[@class='input-group']//input[@name='confirmed_password']")).sendKeys("qwerty12345");
-        Lite.findElement(By.xpath("//ul[@class='opt-ins list-unstyled']//label[@class='form-check']//input[@name='privacy_policy']")).click();
-        Lite.findElement(By.xpath("//button[@name='create_account']")).click();
-    }
+
 
     @Test
     public void singlInTranslationTab () {
