@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 @DisplayName("Smoke Tests")
-public class smoketestlitecart extends Data{
+public class SmokeTestsLitecart extends Data{
 
     @Test
     public void switchlanguageTest() {
